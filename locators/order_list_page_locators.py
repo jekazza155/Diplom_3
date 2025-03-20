@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class OrderListPageLocators:
-    ORDER_IN_WORK = (By.XPATH, "(//li[contains(@class, 'text text_type_digits-default mb-2')])[6][1]")
+    ORDER_IN_WORK = (By.XPATH, ".//li[contains(@class, 'text_type_digits-default')]")
     ORDER_COUNTER_TODAY = (By.XPATH, "(//p[contains(@class, 'OrderFeed_number__2MbrQ')])[2]")
     INGREDIENT_IN_ORDER = (By.XPATH, "(//div[contains(@class,'Modal_imgBox__27yrH')])[1]")
     ORDER_NUMBER_IN_HISTORY = (By.XPATH, "(//p[contains(@class, 'text text_type_digits-default')])[1]")

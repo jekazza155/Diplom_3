@@ -78,7 +78,9 @@ class MainPage(BasePage):
 
     @allure.step("Получить номер нового заказа")
     def get_new_order_number(self):
-        WebDriverWait(self.driver, 10).until(lambda driver: self.wait_and_find_element(MainPageLocators.NUMBER_NEW_ORDER).text != '9999')
+        self.wait_for_condition(
+            lambda driver: self.wait_and_find_element(MainPageLocators.NUMBER_NEW_ORDER).text != '9999'
+        )
         new_order_number_element = self.wait_and_find_element(MainPageLocators.NUMBER_NEW_ORDER)
         new_order_number = new_order_number_element.text
         return int(new_order_number)
