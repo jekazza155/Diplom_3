@@ -1,0 +1,21 @@
+from selenium.webdriver.common.by import By
+
+class MainPageLocators:
+    INGREDIENT_LIST = (By.CLASS_NAME, "BurgerIngredients_ingredients__list__2A-mT")
+    CREATE_ORDER_DESCRIPTION = (By.XPATH, "//p[text()='Ваш заказ начали готовить']")
+    BUN_INGREDIENT = (By.XPATH, "(//a[contains(@class, 'BurgerIngredient_ingredient__1TVf6')])[2]")
+    INGREDIENT_ITEM = (By.CLASS_NAME, "BurgerIngredient_ingredient__1TVf6")
+    TITLE_MAIN_PAGE = (By.XPATH, "//h1[text() = 'Соберите бургер']")
+    BUTTON_ACCOUNT = (By.XPATH, "(.//a[@class = 'AppHeader_header__link__3D_hX'])[2]")
+    COUNTER = (By.XPATH, "(//p[contains(@class, 'counter_counter__num__3nue1')])[2]")
+    INGREDIENT_BTN = (By.XPATH, ".//a[@class = '.BurgerIngredient_ingredient__1TVf6'] and text()='Краторная булка N-200i'")
+    BURGER_ORDER = (By.XPATH, "//ul[@class = 'BurgerConstructor_basket__list__l9dp_']")
+    SAUCE_INGREDIENT = (By.XPATH, "(//a[contains(@class, 'BurgerIngredient_ingredient__1TVf6')])[5]")
+    X_BUTTON = (By.XPATH, "//button[@type='button']")
+    CREATE_ORDER_BTN = (By.XPATH, "//button[text()='Оформить заказ']")
+    LIST_ORDER_BTN = (By.XPATH, "//p[text()='Лента Заказов']")
+    INGREDIENT_TITLE = (By.XPATH, "//h2[text()='Детали ингредиента']")
+    CLOSE_WINDOW_BTN = (By.XPATH, "//button[contains(@class, 'Modal_modal__close_modified__3V5XS')]")
+    NUMBER_NEW_ORDER = (By.XPATH, "//h2[contains(@class, 'Modal_modal__title_shadow__3ikwq Modal_modal__title__2L34m text text_type_digits-large mb-8')]")
+    COUNTER_INGREDIENTS = (By.XPATH, "(//div[contains(@class, '.counter_default__28sqi')])[2]")
+    MEAT_INGREDIENT = (By.XPATH, "(//a[contains(@class, 'BurgerIngredient_ingredient__1TVf6')])[10]")
